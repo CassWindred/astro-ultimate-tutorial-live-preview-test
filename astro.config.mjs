@@ -12,6 +12,7 @@ export default defineConfig({
     storyblok({
       accessToken: env.STORYBLOK_TOKEN,
       bridge: env.STORYBLOK_IS_PREVIEW === 'yes',
+      // livePreview: env.STORYBLOK_IS_PREVIEW === 'yes',
       components: {
         page: 'storyblok/Page',
         feature: 'storyblok/Feature',
